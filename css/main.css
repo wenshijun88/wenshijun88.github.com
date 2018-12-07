@@ -111,14 +111,16 @@ li{list-style: none;}
     width: 1200px;
     margin: 0 auto
 }
-
+#productions.content{
+    top: 60px;
+}
 #productions .swiper-container {
     padding-bottom: 60px;
 }
 
 #productions .swiper-slide {
     width: 520px;
-    height: 408px;
+    height: 330px;
     background: #fff;
     box-shadow: 0 8px 30px #ddd;
 }
@@ -155,6 +157,7 @@ li{list-style: none;}
 
 #productions .swiper-button-prev {
     left: 0px;
+    transform: translateY(-50%);
     width: 45px;
     height: 45px;
     background: url(../images/wm_button_icon.png) no-repeat;
@@ -169,6 +172,7 @@ li{list-style: none;}
 
 #productions .swiper-button-next {
     right: 0px;
+    transform: translateY(-50%);
     width: 45px;
     height: 45px;
     background: url(../images/wm_button_icon.png) no-repeat;
@@ -180,14 +184,18 @@ li{list-style: none;}
     background-position: 0 -139px;
     background-size: 100%
 }
+.content .content-des{
+    padding: 20px;
+    box-sizing: border-box;
+}
 .content .content-des .intro,.content .content-des .responsibility,.content .content-des .tech{display: flex;margin-top: 18px}
 .content .content-des .item-title{max-width: 88px;font-weight: bold}
 .content .content-des .intro-des{flex: 1;margin-left: 10px;line-height: 25px}
- .more{text-align: center; font-size: 18px;position: absolute;top: 500px;width: 100%}
+ .more{text-align: center; font-size: 18px;position: absolute;top: 559px;width: 100%}
  .more a{text-decoration: none; color: #FFF;}
 
 .connect .content{top: 160px}
- .connect .content .key-words{font-size: 24px;text-align: center}
+.connect .content .key-words{font-size: 24px;text-align: center}
 .connect .content .key-words span+span{margin-left: 16px}
 .connect .content .key-words .key1{color: red}
 .connect .content .key-words .key2{color: #3cf}
@@ -198,6 +206,13 @@ li{list-style: none;}
 .connect .content .connection{text-align: center;color: #eee;margin-top: 100px;font-size: 18px}
 .footer{position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);border-top: 1px solid #756D4D;width: 100%;padding-top: 8px;padding-bottom: 8px}
 .footer p{font-size: 12px;text-align: center;color: #756D4D;height: 20px;line-height: 20px}
+
+.icon-email{
+    height: 17px;
+}
+.connection span{
+    margin-right: 20px;
+}
 
 @media screen and (max-width: 600px){
     .mine .content .info-list .info-item .img{width: 50px;height: 50px;}
