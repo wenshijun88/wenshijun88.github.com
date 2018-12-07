@@ -33,7 +33,6 @@ $(function () {
     $("#fp-nav ul li a span").css({margin:0})
     $("#fp-nav ul li a span").on("mouseenter",function () {
         $(this).css({width:"15px",height:"15px",margin:0});
-        console.log($(this).siblings())
         $(this).siblings().css({display:'block'})
         $(this).siblings().animate({right: "30px",opacity:1});
     })
@@ -46,10 +45,8 @@ $(function () {
         $('.banner').mousemove(function (evt) {
             var ee=evt||window.event;
             ee.cancelBubble=true;
-            //console.log(ee.pageX-$('.banner').offset().left)
             var tempX=ee.pageX-$('.banner').offset().left- $('.banner').outerWidth()/2
             var tempY=ee.pageY-$('.banner').offset().top- $('.banner').outerHeight()/2
-            console.log(tempY)
             $(this).css({transform:'rotateY('+tempX/40+'deg) rotateX('+(-tempY/40)+'deg)'})
         })
     })
@@ -102,7 +99,6 @@ $(function () {
                 }
             },
             setTransition: function(transition) {
-                console.log(transition)
                 for (var i = 0; i < this.slides.length; i++) {
                     var slide = this.slides.eq(i)
                     slide.transition(transition);
